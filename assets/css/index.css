@@ -1,0 +1,134 @@
+@import url("index.css");
+@import url("../fonts/fonts.css");
+
+/*login css*/
+.login-btn {
+    margin-top: 20px;
+}
+
+.login_alert {
+    text-align: center;
+}
+
+.Title {
+    text-align: center;
+    font-family: Molot;
+}
+
+.btn {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 4px;
+    border: 1px solid black;
+
+}
+
+.btn:hover {
+    background-color: rgb(230, 235, 236);
+    color: black;
+}
+
+/*//progressive bar*/
+.hidden-statistics {
+    min-width: 100%;
+    width: 140px;
+    max-width: 140px;
+}
+
+.hidden-procent {
+    display: none;
+    width: 140px;
+    max-width: 140px;
+}
+
+.progress {
+    margin-bottom: 0px;
+    color: black;
+}
+
+.progress-bar-success {
+    color: black;
+
+}
+
+.save {
+    display: none;
+}
+
+/*
+Logout*/
+#logout {
+    position: fixed;
+    right: 10px;
+    top: 5px;
+}
+
+/*table*/
+td, th {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+/*main*/
+.main {
+    margin-top: 40px;
+}
+
+/*delete_confirm_dialog*/
+.delete_confirm_dialog .btn {
+    margin: 20px;
+}
+
+.delete_confirm_dialog .btn:hover {
+    color: black;
+    border: none;
+}
+
+.delete_confirm_dialog div {
+    text-align: center;
+}
+
+/*Modal center*/
+.error_update_user {
+    text-align: center;
+}
+
+/*Addnew user*/
+.add_new_user {
+    margin-top: 30px;
+}
+
+.add_new_user button {
+    margin-top: 30px;
+}
+
+/*
+Dropdown style*/
+.homepage-dropdown-li {
+    cursor: pointer;
+}
+
+.homepage-dropdown-li:hover {
+    background: whitesmoke;
+    font-weight: bold;
+}
+
+#save_sum_birthday_gift {
+    position: relative;
+    margin-left: 10px;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.save-admin {
+    display: none;
+}
+
+.fixed_len_home_btn * {
+    width: 185px;
+}
+

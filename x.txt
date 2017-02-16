@@ -1,0 +1,15 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteBase /birthday/
+
+#RewriteRule ^(.*)$ ./index.php?page=$1
+RewriteRule ^(.*)/(.*)/(.*)/(.*)/(.*)/(.*)/(.*)/$ index.php?atr1=$1&atr2=$2&atr3=$3&atr4=$4&atr5=$5&atr6=$6&atr7=$7 [L,QSA,NC]
+RewriteRule ^(.*)/(.*)/(.*)/(.*)/(.*)/(.*)/$ index.php?atr1=$1&atr2=$2&atr3=$3&atr4=$4&atr5=$5&atr6=$6 [L,QSA,NC]
+RewriteRule ^(.*)/(.*)/(.*)/(.*)/(.*)/$ index.php?atr1=$1&atr2=$2&atr3=$3&atr4=$4&atr5=$5 [L,QSA,NC]
+RewriteRule ^(.*)/(.*)/(.*)/(.*)/$ index.php?atr1=$1&atr2=$2&atr3=$3&atr4=$4 [L,QSA,NC]
+RewriteRule ^(.*)/(.*)/(.*)/$ index.php?atr1=$1&atr2=$2&atr3=$3 [L,QSA,NC]
+RewriteRule ^(.*)/(.*)/$ index.php?atr1=$1&atr2=$2 [L,QSA,NC]
+RewriteRule ^(.*)/$ index.php?atr1=$1 [L,QSA,NC]
